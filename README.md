@@ -74,7 +74,7 @@ This project leverages and builds upon the open-source Kotaemon project:
     year = {2024},
     howpublished = {\url{https://github.com/Cinnamon/kotaemon}},
 }
-
+```
 
 ## 📚 Data Sources
 EduAI utilizes various institutional data, including:
