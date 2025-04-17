@@ -18,29 +18,63 @@ EduAI addresses this problem through an **AI-powered retrieval-augmented generat
 
 - **Document Ingestion and Indexing:** Supports PDFs, Word documents, research papers, policies, and FAQs.
 - **Retrieval-Augmented Generation (RAG):** Provides conversational answers based on semantic search.
-- **Integration Capabilities:** Seamlessly integrates with university portals, chatbots, and LMS platforms (e.g., Moodle, Blackboard).
+<!-- - **Integration Capabilities:** Seamlessly integrates with university portals, chatbots, and LMS platforms (e.g., Moodle, Blackboard). -->
 - **Multi-Tenant Architecture:** Supports multiple institutions simultaneously.
-- **Plug-and-Play API:** Simple integration into existing university systems.
-- **Cloud & On-Premise Deployment:** Flexible deployment options respecting institutional security policies.
+<!-- - **Plug-and-Play API:** Simple integration into existing university systems. -->
+<!-- - **Cloud & On-Premise Deployment:** Flexible deployment options respecting institutional security policies. -->
 
 ---
 
 ## 🛠️ Technical Implementation
 
-### AI Models & Techniques
-- **LLMs:** OpenAI GPT, Llama, Mistral, R1 (Fine-tuned for contextual accuracy).
-- **Semantic Search:** FAISS / ChromaDB Vector Databases.
-- **Document Processing:** LangChain Framework.
+EduAI is built upon a Retrieval-Augmented Generation (RAG) framework derived and customized from the open-source Kotaemon project [1].
 
-### Technology Stack
-| Component       | Technology                           |
-|-----------------|--------------------------------------|
-| Backend         | FastAPI + LangChain                  |
-| Frontend        | React.js (Interactive Q&A Interface) |
-| Database        | FAISS, ChromaDB                      |
-| Deployment      | Docker (Containerized), AWS/GCP-ready|
+### AI & ML Models
+- **LLMs:** OpenAI GPT, AzureOpenAI, Claude, Google Gemini, Cohere Chat (Fine-tuned for contextual accuracy).
+- **Semantic Search:** ChromaDB Vector Databases. Embeddings stored and retrieved using vector databases.
+
+### RAG Pipeline
+- Document ingestion and preprocessing.
+- Embedding and semantic indexing of institutional content.
+- Retrieval and ranking of relevant document snippets.
+- Contextual answer generation using an optimized Large Language Model (LLM).
+
+### Backend and Frontend Technologies
+- **Backend:** FastAPI integrated with LangChain for document processing and API handling.
+- **Frontend:** Gradio, providing interactive chat-based Q&A capabilities.
+
+### Vector Database
+- **ChromaDB:** For efficient semantic search and retrieval operations.
+
+### Deployment
+- Containerized using **Docker** to ensure portability and ease of deployment on cloud services such as AWS, GCP, or on-premises infrastructures.
 
 ---
+
+## 📦 Technology Stack
+
+| Component        | Technology                                    |
+|------------------|-----------------------------------------------|
+| **Framework**    | FastAPI, LangChain                            |
+| **Frontend**     | Gradio                                        |
+| **Vector DB**    | ChromaDB                                      |
+| **AI Models**    | GPT, Gemini, Claude                           |
+| **Containerization** | Docker                                    |
+
+---
+
+## 🎓 Reference & Citation
+
+This project leverages and builds upon the open-source Kotaemon project:
+
+```bibtex
+@misc{kotaemon2024,
+    title = {Kotaemon - An open-source RAG-based tool for chatting with any content.},
+    author = {The Kotaemon Team},
+    year = {2024},
+    howpublished = {\url{https://github.com/Cinnamon/kotaemon}},
+}
+
 
 ## 📚 Data Sources
 EduAI utilizes various institutional data, including:
