@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  eduai-backend:
+    build: .
+    container_name: eduai-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY
+    volumes:
+      - .:/app
