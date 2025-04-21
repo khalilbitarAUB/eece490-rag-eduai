@@ -132,6 +132,105 @@ Extensive testing and validation procedures ensure the reliability, accuracy, an
 
 ---
 
+## 🚀 Quickstart
+
+You can run EduAI either locally (using Python and virtual environment) or using Docker.
+
+---
+
+### 🧪 Option 1: Local Setup (No Docker – Gradio UI)
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/eduai
+cd eduai
+```
+
+#### 2. Create and Activate a Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+#### 3. Install Python Dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+#### 4. Configure Environment Variables
+
+Copy the example file:
+
+```bash
+cp .env.example .env
+```
+
+Then open `.env` and add the following:
+
+```
+OPENAI_API_KEY=your_openai_key
+EMBEDDING_MODEL=openai/text-embedding-ada-002
+```
+
+#### 5. Run the Application
+
+```bash
+python app.py
+```
+
+After the server starts, Gradio will provide a local URL like:
+
+```
+Running on local URL: http://127.0.0.1:7860
+```
+
+Open that URL in your browser to interact with EduAI.
+
+---
+
+### 🐳 Option 2: Docker Setup
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/eduai
+cd eduai
+```
+
+#### 2. Configure Environment Variables
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and fill in your credentials:
+
+```
+OPENAI_API_KEY=your_openai_key
+EMBEDDING_MODEL=openai/text-embedding-ada-002
+```
+
+#### 3. Build and Run the App Using Docker Compose
+
+```bash
+docker-compose up --build
+```
+
+Once the containers are up, access the app via:
+
+```
+http://localhost:7860
+```
+
+
+---
+
 ## 📖 Repository Structure
 ```plaintext
 EduAI
