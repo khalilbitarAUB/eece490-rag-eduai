@@ -36,7 +36,7 @@ EduAI is built upon a Retrieval-Augmented Generation (RAG) framework derived and
 ### RAG Pipeline
 - Document ingestion and preprocessing.
 - Embedding and semantic indexing of institutional content.
-- Retrieval and ranking of relevant document snippets.
+- Retrieval and ranking of relevant document snippets using similarity search.
 - Contextual answer generation using an optimized Large Language Model (LLM).
 
 ### Backend and Frontend Technologies
@@ -76,12 +76,18 @@ This project leverages and builds upon the open-source Kotaemon project:
 }
 ```
 
+---
+
+For a more comprehesive **technical guide**, and **MLOps documentation**, please find the pdf **EduAI__Technical_Documentation.pdf** in this google drive [link](https://drive.google.com/drive/folders/19rSiP2mCGHKqTdh62ux6FOozcliDmARF?usp=drive_link).
+
 ## 📚 Data Sources
 EduAI utilizes various institutional data, including:
 
 - University policies and academic guidelines
 - Course syllabi, lecture materials, and grading criteria
 - Student handbooks, administrative workflows, and FAQs
+
+Tested on some of AUB's faculty documents and policies. You can find a google drive link to the data source documents [here](https://drive.google.com/drive/folders/19rSiP2mCGHKqTdh62ux6FOozcliDmARF?usp=drive_link). Download the **ingestion_docs.zip**, and upload it from the **Files** tab on the app UI to test the app.
 
 ---
 
@@ -229,3 +235,9 @@ http://localhost:7860
 ```
 
 Login with the default credentials: username: admin, password: admin. Create other users as necessary!
+
+---
+
+## 🎤 Product Pitching Presentation
+
+You can find my PowerPoint Presentation I used to pitch my product [here](https://drive.google.com/drive/folders/19rSiP2mCGHKqTdh62ux6FOozcliDmARF?usp=drive_link)
