@@ -345,7 +345,7 @@ GRAPHRAG_INDICES = [
                 ".png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, "
                 ".pptx, .csv, .html, .mhtml, .txt, .md, .zip"
             ),
-            "private": False,
+            "private": True,
         },
         "index_type": graph_type,
     }
@@ -360,7 +360,7 @@ KH_INDICES = [
                 ".png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, "
                 ".pptx, .csv, .html, .mhtml, .txt, .md, .zip"
             ),
-            "private": False,
+            "private": True,
         },
         "index_type": "ktem.index.file.FileIndex",
     },

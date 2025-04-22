@@ -197,8 +197,8 @@ Open that URL in your browser to interact with EduAI.
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/eduai
-cd eduai
+git clone https://github.com/khalilbitarAUB/eece490-rag-eduai.git
+cd cd kotaemon
 ```
 
 #### 2. Configure Environment Variables
@@ -228,17 +228,4 @@ Once the containers are up, access the app via:
 http://localhost:7860
 ```
 
-
----
-
-## 📖 Repository Structure
-```plaintext
-EduAI
-│
-├── backend/           # Backend FastAPI and LangChain scripts
-├── frontend/          # React frontend interface
-├── models/            # AI models and embeddings
-├── docs/              # Project documentation
-├── Dockerfile         # Containerization configuration
-├── requirements.txt   # Project dependencies
-└── README.md          # Project overview and instructions
+Login with the default credentials: username: admin, password: admin. Create other users as necessary!

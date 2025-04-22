@@ -33,6 +33,7 @@ class LoginPage(BasePage):
 
     def on_building_ui(self):
         gr.Markdown(f"# Welcome to {self._app.app_name}!")
+        # gr.Markdown(f"# Welcome to EduAI!")
         self.usn = gr.Textbox(label="Username", visible=False)
         self.pwd = gr.Textbox(label="Password", type="password", visible=False)
         self.btn_login = gr.Button("Login", visible=False)
